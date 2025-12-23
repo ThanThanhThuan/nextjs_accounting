@@ -1,6 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Nextjs Double-Entry Accounting with MS SQL Server
 
-## Getting Started
+<img width="650" height="858" alt="image" src="https://github.com/user-attachments/assets/e8123cc3-f7a5-43ef-b78f-c93a0e3ae0d2" />
+
+<img width="646" height="787" alt="image" src="https://github.com/user-attachments/assets/1a2d8f82-a67f-4597-8f52-31c7fe7431f4" />
+
+<img width="637" height="777" alt="image" src="https://github.com/user-attachments/assets/e88649ca-6c71-4c10-a62a-ca9b0dc494df" />
 
 First, run the development server:
 
