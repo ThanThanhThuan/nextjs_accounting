@@ -1,0 +1,32 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlserver"
+}
+
+model Account {
+  id      Int            @id @default(autoincrement())
+  name    String
+  type    String
+  entries JournalEntry[]
+}
+
+model JournalTransaction {
+  id          Int            @id @default(autoincrement())
+  date        DateTime       @default(now())
+  description String
+  entries     JournalEntry[]
+}
+
+model JournalEntry {
+  id            Int                @id @default(autoincrement())
+  amount        Decimal            @db.Decimal(18, 2)
+  type          String
+  accountId     Int
+  transactionId Int
+  account       Account            @relation(fields: [accountId], references: [id])
+  transaction   JournalTransaction @relation(fields: [transactionId], references: [id])
+}
